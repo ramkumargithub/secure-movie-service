@@ -52,15 +52,15 @@ Secure Movie Service is a Python FastAPI microservice that provides movie detail
 1.  Clone the repository:
    ```bash
    git clone https://github.com/ramkumargithub/secure-movie-service.git
-   cd secure-movie-service
-2.	Create and activate a Python virtual environment:
-    python -m venv venv
+   cd secure-movie-service´´´
+2.  Create and activate a Python virtual environment:
+    ```python -m venv venv
     source venv/bin/activate   # Linux/macOS
-    venv\Scripts\activate      # Windows
+    venv\Scripts\activate      # Windows´´´
 3.  Install dependencies:
-   pip install -r requirements.txt
+   ```pip install -r requirements.txt´´´
 4. Run the FastAPI app locally:
-    uvicorn app.main:app --reload
+    ```uvicorn app.main:app --reload´´´
 5.	Open your browser at http://127.0.0.1:8000/docs to access the interactive API documentation.
 
 
