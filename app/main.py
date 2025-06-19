@@ -5,6 +5,7 @@ from starlette.middleware.httpsredirect import HTTPSRedirectMiddleware
 from .database import get_movie_by_details
 from .security import add_security_headers
 from pydantic import BaseModel, constr
+from fastapi import FastAPI
 
 app = FastAPI()
 
@@ -37,3 +38,7 @@ async def get_movie(query: MovieQuery):
     if not movie:
         raise HTTPException(status_code=404, detail="Movie not found")
     return JSONResponse(content=movie)
+
+@app.get("/health")
+async def healthcheck():
+    return {"status": "ok"}
