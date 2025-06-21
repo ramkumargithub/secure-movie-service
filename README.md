@@ -107,7 +107,14 @@ Contributions are welcome! Please follow these guidelines:
 	•	Keep dependencies up to date and check for vulnerabilities.
 	•	Follow secure coding and containerization best practices.
 
-**### License**
+**### Cyber Security Tests covered**
 
-This project is licensed under the MIT License.
+SQL Injection => test_sql_injection_in_genre
+XSS => test_xss_attack_vector_in_genre
+Path Traversal => test_path_traversal_in_movie_id
+Type Coercion/Errors => test_type_error_in_movie_id
+Rate Limiting Abuse => test_rate_limiting_on_movies_endpoint
+Unauthorized Access => test_unauthorized_access_to_protected_movie
+
+
 
